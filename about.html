@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldis Tamara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1c1c1d] text-gray-300 font-serif">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-[#1c1c1d] shadow-md z-50 px-4 md:px-0">
+        <div class="max-w-4xl mx-auto flex justify-between items-center p-5 text-white text-lg">
+            <!-- Nama di sebelah kiri -->
+            <div class="text-xl"></div>
+
+            <!-- Menu untuk Desktop -->
+            <div class="hidden md:flex space-x-6">
+                <a href="about.html" class="hover:text-orange-400">about</a>
+                <a href="experiences.html" class="hover:text-orange-400">experiences</a>
+                <a href="projects.html" class="hover:text-orange-400">projects</a>
+                <a href="teaching.html" class="hover:text-orange-400">teaching</a>
+                <a href="#" class="hover:text-orange-400">cv</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1c1c1d] p-5 text-white">
+            <a href="about.html" class="block py-2 hover:text-orange-400">about</a>
+            <a href="experiences.html" class="block py-2 hover:text-orange-400">experiences</a>
+            <a href="projects.html" class="block py-2 hover:text-orange-400">projects</a>
+            <a href="teaching.html" class="block py-2 hover:text-orange-400">teaching</a>
+            <a href="https://aldistamara.github.io/assets/pdf/Aldis Tamara Putri Iskandar_CV.pdf" class="block py-2 hover:text-orange-400">cv</a>
+        </div>
+    </nav>
+
+    <!-- Tambahkan margin agar konten tidak tertutup navbar -->
+    <div class="mt-20"></div>
+
+    <!-- JavaScript untuk Toggle Menu -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <div class="mt-20"> <!-- Tambahkan margin atas agar konten tidak tertutup navbar -->
+        <div class="max-w-4xl mx-auto p-5 pt-12 text-gray-300">
+            <!-- Bagian About -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start px-4 md:px-0">
+                <!-- Gambar di atas untuk mobile, di kanan untuk desktop -->
+                <div class="md:col-span-8 max-w-3xl">
+                    <h1 class="text-4xl text-white">Aldis Tamara</h1>
+                    <p class="text-lg mt-2">Hi! Aldis.</p>
+                    <p class="mt-4">
+                        I'm a fresh graduate in <a href="https://sistem-informasi.fti.trisakti.ac.id/" class="text-orange-400 hover:underline">Information Systems</a> from <a href="https://trisakti.ac.id/" class="text-orange-400 hover:underline">Trisakti University</a>
+                         with a strong passion for data analysis, ERP systems, system design, and business. Throughout my 
+                        academic journey, I have gained hands-on experience in Odoo ERP implementation, data visualization using Power BI, and web development with React and Tailwind.
+                    </p>
+                    <p class="mt-2">
+                        I have actively contributed as a laboratory assistant, industrial teaching assistant, and speaker in ERP training sessions, where I helped students and professionals 
+                        understand and implement ERP solutions effectively. My research on Transjakarta passenger data forecasting using ARIMA and Power BI has been published in a reputable 
+                        journal, reflecting my strong analytical and problem-solving skills.
+                    </p>
+                </div>
+                <div class="md:col-span-4 flex justify-center">
+                    <img src="img/aldis.jpg" alt="Aldis Tamara" class="rounded-lg shadow-lg w-full max-w-xs md:max-w-sm">
+                </div>
+            </div>
+            <p class="mt-2">
+                Professionally, I have worked as an ERP Odoo Implementation and Web Developer Intern at OK OCE Indonesia, where I successfully implemented various Odoo modules, 
+                improved email marketing efficiency, and redesigned the organization’s website. Additionally, as a mentor at PT Anagata Sisedu Nusantara, I taught Scratch-based 
+                coding to young students, ensuring a high success rate in their final projects.
+            </p>
+            <p class="mt-2">
+                With a strong background in system analysis, programming, and business strategy, I am eager to apply my skills in a dynamic environment where I can contribute
+                 to innovative technology-driven solutions.
+            </p>
+        
+            <div class="mt-12 px-4 md:px-0">
+                <h2 class="text-3xl text-white mb-6">news</h2>
+            
+                <div class="grid grid-cols-12 gap-4 gap-y-8">
+                    <!-- Item 1 -->
+                    <div class="col-span-2 text-white-400 text-sm">
+                        <p>May 30, <br> 2024</p>
+                    </div>
+                    <div class="col-span-10">
+                        <p>
+                            I will be presenting our poster on 
+                            <a href="#" class="text-orange-400 hover:underline">“Measuring Local Accuracies to Assess Evaluation Metrics”</a> 
+                            at the <a href="#" class="text-orange-400 hover:underline">2024 Netflix Workshop on Personalization, Recommendation and Search (PRS)!</a> 🎤
+                        </p>
+                    </div>
+            
+                    <!-- Item 2 -->
+                    <div class="col-span-2 text-white-400 text-sm">
+                        <p>May 20, <br> 2024</p>
+                    </div>
+                    <div class="col-span-10">
+                        <p>Started my Machine Learning Research internship at the Algorithmic Identity team at Netflix! 📜</p>
+                    </div>
+            
+                    <!-- Item 3 -->
+                    <div class="col-span-2 text-white-400 text-sm">
+                        <p>Aug 25, <br> 2023</p>
+                    </div>
+                    <div class="col-span-10">
+                        <p>Started my Ph.D. at the <a href="#" class="text-orange-400 hover:underline">Language Technologies Institute</a> at Carnegie Mellon University’s School of Computer Science! 🧑‍🎓</p>
+                    </div>
+            
+                    <!-- Item 4 -->
+                    <div class="col-span-2 text-white-400 text-sm">
+                        <p>May 22, <br> 2023</p>
+                    </div>
+                    <div class="col-span-10">
+                        <p>Re-joined the <a href="#" class="text-orange-400 hover:underline">Information Intelligence (Search Quality)</a> team at Apple for my AI/ML internship 🍏</p>
+                    </div>
+            
+                    <!-- Item 5 -->
+                    <div class="col-span-2 text-white-400 text-sm">
+                        <p>Jan 5, <br> 2023</p>
+                    </div>
+                    <div class="col-span-10">
+                        <p>
+                            Our paper <a href="#" class="text-orange-400 hover:underline">“Men Have Feelings Too: Debiasing Sentiment Analyzers using Sequence Generative Adversarial Networks”</a> 
+                            is accepted to the <a href="#" class="text-orange-400 hover:underline">Artificial Intelligence for Social Good Workshop</a> at AAAI 2023 as an <em>oral presentation</em> 🎉
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 px-4 md:px-0">
+                <h2 class="text-3xl text-white mb-6">publication</h2>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 gap-y-8">
+                    <!-- Publikasi 1 -->
+                    <div class="md:col-span-2 flex md:block md:justify-start">
+                        <span class="bg-orange-500 text-white font-bold px-3 py-1 rounded text-sm">AAAI</span>
+                    </div>
+                    <div class="md:col-span-10">
+                        <p class="text-lg text-white">
+                            Men Have Feelings Too: Debiasing Sentiment Analyzers using Sequence Generative Adversarial Networks
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            Deviyani, Athiya, Malik, Mehak, Widjaja, Haris and 
+                            <a href="#" class="text-blue-400 underline">1 more author</a>
+                        </p>
+                        <p class="italic text-gray-400">In AAAI'23 Workshop on Artificial Intelligence for Social Good, Feb 2023</p>
+                        <div class="flex space-x-4 mt-2">
+                            <button class="border px-4 py-1 text-sm hover:bg-gray-600">ABS</button>
+                            <button class="border px-4 py-1 text-sm hover:bg-gray-600">PDF</button>
+                        </div>
+                    </div>
+            
+                    <!-- Publikasi 2 -->
+                    <div class="md:col-span-2 flex md:block md:justify-start">
+                        <span class="bg-orange-500 text-white font-bold px-3 py-1 rounded text-sm">INTERSPEECH</span>
+                    </div>
+                    <div class="md:col-span-10">
+                        <p class="text-lg text-white">
+                            Text Normalization for Speech Systems for All Languages
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            Deviyani, Athiya, and Black, Alan W.
+                        </p>
+                        <p class="italic text-gray-400">In INTERSPEECH'22 Workshop on Speech for Social Good, Sep 2022</p>
+                        <div class="flex space-x-4 mt-2">
+                            <button class="border px-4 py-1 text-sm hover:bg-gray-600">ABS</button>
+                            <button class="border px-4 py-1 text-sm hover:bg-gray-600">PDF</button>
+                        </div>
+                    </div>
+            
+                    <!-- Publikasi 3 -->
+                    <div class="md:col-span-2 flex md:block md:justify-start">
+                        <span class="bg-orange-500 text-white font-bold px-3 py-1 rounded text-sm">INTERSPEECH</span>
+                    </div>
+                    <div class="md:col-span-10">
+                        <p class="text-lg text-white">
+                            Men Have Feelings Too: Debiasing Sentiment Analyzers using Sequence Generative Adversarial Networks
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            Deviyani, Athiya, Malik, Mehak, Widjaja, Haris and 
+                            <a href="#" class="text-blue-400 underline">1 more author</a>
+                        </p>
+                        <p class="italic text-gray-400">In AAAI'23 Workshop on Artificial Intelligence for Social Good, Feb 2023</p>
+                        <div class="flex space-x-4 mt-2">
+                            <button class="border px-4 py-1 text-sm hover:bg-gray-600">ABS</button>
+                            <button class="border px-4 py-1 text-sm hover:bg-gray-600">PDF</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>          
+            
+            <!-- Ikon Sosial Media -->
+            <div class="flex justify-center space-x-6 mt-10">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" class="w-8 h-8" alt="Email"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/google-scholar.png" class="w-8 h-8" alt="Google Scholar"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" class="w-8 h-8" alt="GitHub"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" class="w-8 h-8" alt="LinkedIn"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" class="w-8 h-8" alt="Twitter"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/medium.png" class="w-8 h-8" alt="Medium"></a>
+            </div>
+
+            <!-- Email -->
+            <p class="text-center text-gray-400 mt-4 text-sm">
+                The best way to contact me is through email at adeviyan [at] cs [dot] cmu [dot] edu.
+            </p>
+
+            <footer class="mt-10 py-2 border-t border-gray-600 text-center text-white-400">
+                <p class="text-xs mt-4">© Copyright 2025 Aldis Tamara. Inspired by <a href="#" class="text-orange-400 hover:underline">al-folio</a> theme. Last updated: March 11, 2025.</p> 
+            </footer>
+        </div>    
+    </div>
+</body>
+</html>

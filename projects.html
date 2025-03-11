@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldis Tamara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1c1c1d] text-white-300 font-serif">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-[#1c1c1d] shadow-md z-50 px-4 md:px-0">
+        <div class="max-w-4xl mx-auto flex justify-between items-center p-5 text-white text-lg">
+            <!-- Nama di sebelah kiri -->
+            <a href="about.html" class="">Aldis Tamara</a>
+
+            <!-- Menu untuk Desktop -->
+            <div class="hidden md:flex space-x-6">
+                <a href="about.html" class="hover:text-orange-400">about</a>
+                <a href="experiences.html" class="hover:text-orange-400">experiences</a>
+                <a href="projects.html" class="hover:text-orange-400">projects</a>
+                <a href="teaching.html" class="hover:text-orange-400">teaching</a>
+                <a href="#" class="hover:text-orange-400">cv</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1c1c1d] p-5 text-white">
+            <a href="about.html" class="block py-2 hover:text-orange-400">about</a>
+            <a href="experiences.html" class="block py-2 hover:text-orange-400">experiences</a>
+            <a href="projects.html" class="block py-2 hover:text-orange-400">projects</a>
+            <a href="teaching.html" class="block py-2 hover:text-orange-400">teaching</a>
+            <a href="https://aldistamara.github.io/assets/pdf/Aldis Tamara Putri Iskandar_CV.pdf" class="block py-2 hover:text-orange-400">cv</a>
+        </div>
+    </nav>
+
+    <!-- Tambahkan margin agar konten tidak tertutup navbar -->
+    <div class="mt-20"></div>
+
+    <!-- JavaScript untuk Toggle Menu -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <div class="mt-20"> <!-- Tambahkan margin atas agar konten tidak tertutup navbar -->
+        <div class="max-w-4xl mx-auto p-5 pt-12 text-gray-300">
+            <!-- Bagian About -->
+            <div class="gap-6 items-start px-4 md:px-0">
+                <!-- Gambar di atas untuk mobile, di kanan untuk desktop -->
+                <div class="md:col-span-8 max-w-3xl">
+                    <h1 class="text-4xl text-white">projects</h1>
+                    <p class="text-white-400">academic research projects in reverse chronological order.</p>
+                </div>
+                <!-- year -->
+                <h3 class="text-3xl text-white mt-6">2025</h3>
+                <p class="">Analisa dan Peramalan Data Penumpang Transjakarta dengan ARIMA serta Visualisasi dengan 
+                    Metode Four-step Kimball menggunakan Power BI </p>
+                <p class="">Aldis Tamara Putri Iskandar*, Teddy Siswanto*, Syandra Sari* </p>
+                <p><a href="#" class="text-orange-400 hover:underline">pdf</a> | <a href="#" class="text-orange-400 hover:underline">poster</a></p>
+
+                <!-- year -->
+                <h3 class="text-3xl text-white mt-6">2024</h3>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="text-orange-400 hover:underline">pdf</a> | <a href="#" class="text-orange-400 hover:underline">poster</a></p>
+
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="text-orange-400 hover:underline">pdf</a> | <a href="#" class="text-orange-400 hover:underline">code</a></p>
+
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="text-orange-400 hover:underline">pdf</a> | <a href="#" class="text-orange-400 hover:underline">code</a></p>
+
+                <!-- year -->
+                <h3 class="text-3xl text-white mt-6">2023</h3>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="text-orange-400 hover:underline">pdf</a> | <a href="#" class="text-orange-400 hover:underline">poster</a></p>
+            </div>
+
+            <footer class="mt-10 py-2 border-t border-gray-600 text-center text-white-400">
+                <p class="text-xs mt-4">© Copyright 2025 Aldis Tamara. Inspired by <a href="#" class="text-orange-400 hover:underline">al-folio</a> theme. Last updated: March 11, 2025.</p> 
+            </footer>
+        </div>    
+    </div>
+</body>
+</html>

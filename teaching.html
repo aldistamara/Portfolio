@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldis Tamara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1c1c1d] text-white-300 font-serif">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-[#1c1c1d] shadow-md z-50 px-4 md:px-0">
+        <div class="max-w-4xl mx-auto flex justify-between items-center p-5 text-white text-lg">
+            <!-- Nama di sebelah kiri -->
+            <a href="about.html" class="">Aldis Tamara</a>
+
+            <!-- Menu untuk Desktop -->
+            <div class="hidden md:flex space-x-6">
+                <a href="about.html" class="hover:text-orange-400">about</a>
+                <a href="experiences.html" class="hover:text-orange-400">experiences</a>
+                <a href="projects.html" class="hover:text-orange-400">projects</a>
+                <a href="teaching.html" class="hover:text-orange-400">teaching</a>
+                <a href="#" class="hover:text-orange-400">cv</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1c1c1d] p-5 text-white">
+            <a href="about.html" class="block py-2 hover:text-orange-400">about</a>
+            <a href="experiences.html" class="block py-2 hover:text-orange-400">experiences</a>
+            <a href="projects.html" class="block py-2 hover:text-orange-400">projects</a>
+            <a href="teaching.html" class="block py-2 hover:text-orange-400">teaching</a>
+            <a href="https://aldistamara.github.io/assets/pdf/Aldis Tamara Putri Iskandar_CV.pdf" class="block py-2 hover:text-orange-400">cv</a>
+        </div>
+    </nav>
+
+    <!-- Tambahkan margin agar konten tidak tertutup navbar -->
+    <div class="mt-20"></div>
+
+    <!-- JavaScript untuk Toggle Menu -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <div class="mt-20"> <!-- Tambahkan margin atas agar konten tidak tertutup navbar -->
+        <div class="max-w-4xl mx-auto p-5 pt-12 text-gray-300">
+            <!-- Bagian About -->
+            <div class="gap-6 items-start px-4 md:px-0">
+                <!-- Gambar di atas untuk mobile, di kanan untuk desktop -->
+                <div class="md:col-span-8 max-w-3xl">
+                    <h1 class="text-4xl text-white">teaching</h1>
+                    <p class="text-white-400">teaching experience in reversed chronological order.</p>
+                </div>
+                <!-- University -->
+                <h3 class="text-2xl text-white mt-6">Information System - Trisakti University</h3>
+                <p class="text-white-400">Provided office hours, co-delivered lectures and recitations, designed and marked assignments for the graduate courses:</p>
+                <ul class="list-disc list-outside ml-6 mt-2 text-white-300">
+                <!-- subject 1 -->
+                    <li>
+                        <a href="https://sis.trisakti.ac.id/index/rps-view/idrps/887/search/Pemrograman%20Web" class="text-orange-400 hover:underline">Web Programming</a> instructed by <a href="https://informatika.fti.trisakti.ac.id/gurubesar/dian-pratiwi/" class="text-orange-400 hover:underline"> Dian Pratiwi, ST, MTI</a>
+                        <ul class="list-disc list-outside ml-6 text-white-400">
+                            <li>Instructed 28 students in core web programming concepts, including HTML, CSS, PHP, Bootstrap, 
+                                and frameworks, ensuring comprehensive practical understanding  (<a href="#" class="text-orange-400 hover:underline">video</a>)</li>
+                            <li>Independently developed 10 structured learning modules and designed UTS and UAS exercises to 
+                                foster students' creativity and applied skills </li>
+                            <li>Achieved outstanding academic outcomes, with over 90% of students passing the course and an 
+                                average grade above 80 </li>
+                        </ul>
+                    </li>
+                <!-- subject 2 -->
+                <li>
+                    <a href="https://sis.trisakti.ac.id/index/rps-view/idrps/703/search/Enterprise" class="text-orange-400 hover:underline">ERP (Enterprise Resource Planning)</a> & <a href="https://sis.trisakti.ac.id/index/rps-view/idrps/703/search/Enterprise" class="text-orange-400 hover:underline">Data Warehouse</a> instructed by  <a href="https://scholar.google.co.id/citations?user=C09GxgMAAAAJ&hl=en" class="text-orange-400 hover:underline">Dr. Ir. Teddy Siswanto, MMSI.</a>
+                    <ul class="list-disc list-outside ml-6 text-white-400">
+                        <li>Assisted in the implementation of Enterprise Resource Planning (ERP) systems, including Odoo, by 
+                            providing technical support and guidance to users   (<a href="#" class="text-orange-400 hover:underline">video</a>)</li>
+                        <li>Implemented data lineage tracking in Pentaho, enabling traceability of data sources and 
+                            transformations, enhancing data governance and compliance standards </li>
+                        <li>Conducted comprehensive user training sessions for over 50 Students in Informatics and System 
+                            Information, achieving a 95% post-training competency assessment score </li>
+                    </ul>
+                </li>
+                <!-- subject 3 -->
+                <li>
+                    <a href="https://sis.trisakti.ac.id/index/rps-view/idrps/1560/search/Manajemen%20Data%20dan%20Informasi%20Lanjut" class="text-orange-400 hover:underline">Operation System (Manajemen Data dan Informasi Lanjut)</a> instructed by <a href="https://informatika.fti.trisakti.ac.id/gurubesar/ahmad-zuhdi/" class="text-orange-400 hover:underline">Dr. Ahmad Zuhdi, S.Si., M.Kom</a>
+                    <ul class="list-disc list-outside ml-6 text-white-400">
+                        <li>Provided technical assistance to students regarding how to manage data and use Terminal on Linux 
+                            for 45% of students' informatics (<a href="#" class="text-orange-400 hover:underline">video</a>)</li>
+                        <li>Prepared modules, assignments, and examinations </li>
+                        <li>Participated in the development of practical materials </li>
+                    </ul>
+                </li>
+                    
+                </ul>
+            
+                <!-- University -->
+                <h3 class="text-2xl text-white mt-6">Industrial Faculty - Trisakti University</h3>
+                <p class="text-white-400">Provided office hours, co-delivered lectures and recitations, designed and marked assignments for the graduate courses:</p>
+                <ul class="list-disc list-outside ml-6 mt-2 text-white-300">
+                <!-- subject 1 -->
+                    <li>
+                        <a href="https://sis.trisakti.ac.id/index/rps-view/idrps/703/search/Enterprise" class="text-orange-400 hover:underline">ERP (Enterprise Resource Planning)</a> instructed by <a href="https://scholar.google.co.id/citations?user=U3_OpnwAAAAJ&hl=id" class="text-orange-400 hover:underline">Ir. Iveline Anne Marie, MT</a>
+                        <ul class="list-disc list-outside ml-6 text-white-400">
+                            <li>Delivered hands-on practical sessions on Enterprise Resource Planning (ERP) systems, focusing on 
+                                Odoo-based solutions, to Industrial Engineering students  (<a href="#" class="text-orange-400 hover:underline">video</a>)</li>
+                            <li>Developed four comprehensive learning modules tailored to ERP concepts, complemented by final 
+                                business projects where students applied ERP strategies in F&B, manufacturing, and e-commerce 
+                                sectors, under my guidance </li>
+                            <li>Provided strategic consultation throughout the final projects, resulting in an average student grade 
+                                above 80 and successful implementation of diverse business solutions </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <footer class="mt-10 py-2 border-t border-gray-600 text-center text-white-400">
+                <p class="text-xs mt-4">© Copyright 2025 Aldis Tamara. Inspired by <a href="#" class="text-orange-400 hover:underline">al-folio</a> theme. Last updated: March 11, 2025.</p> 
+            </footer>
+        </div>    
+    </div>
+</body>
+</html>
