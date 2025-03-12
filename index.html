@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aldis Tamara</title>
-    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <link rel="icon" type="image/png" href="./img/icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     
 </head>
 <body class="bg-[#1c1c1d] text-gray-300 font-serif">
@@ -58,7 +62,7 @@
                 <!-- Gambar di atas untuk mobile, di kanan untuk desktop -->
                 <div class="md:col-span-8 max-w-3xl">
                     <h1 class="text-4xl text-white">Aldis Tamara</h1>
-                    <p class="text-lg mt-2">Hi! Aldis.</p>
+                    <p class="text-lg mt-2">Hi! I'm Aldis.</p>
                     <p class="mt-4">
                         I'm a fresh graduate in <a href="https://sistem-informasi.fti.trisakti.ac.id/" class="text-orange-400 hover:underline">Information Systems</a> from <a href="https://trisakti.ac.id/" class="text-orange-400 hover:underline">Trisakti University</a>
                          with a strong passion for data analysis, ERP systems, system design, and business. Throughout my 
@@ -70,7 +74,7 @@
                         journal, reflecting my strong analytical and problem-solving skills.
                     </p>
                 </div>
-                <div class="md:col-span-4 flex justify-center">
+                <div class="md:col-span-4 flex justify-center mb-4 md:mt-20">
                     <img src="img/aldis.jpg" alt="Aldis Tamara" class="rounded-lg shadow-lg w-full max-w-xs md:max-w-sm">
                 </div>
             </div>
@@ -88,56 +92,307 @@
             </div>
             <div class="mt-12 px-4 md:px-0">
                 <h2 class="text-3xl text-white mb-6">news</h2>
-            
-                <div class="grid grid-cols-12 gap-4 gap-y-8">
-                    <!-- Item 1 -->
-                    <div class="col-span-2 text-white-400 text-sm">
-                        <p>May 30, <br> 2024</p>
+                <div class="space-y-6">
+                    <!-- News Item 1 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Jan 31, <br> 2025</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            Successfully completed my final project titled 
+                            <a href="projects.html" class="text-orange-400 hover:underline">"Analisa dan Peramalan Data Penumpang 
+                                Transjakarta dengan ARIMA serta Visualisasi
+                                dengan Metode Four-step Kimball
+                                menggunakan Power BI"</a> 📄
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/sidang ta.jpg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/sidang ta.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/sidang ta 2.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/sidang ta 3.jpg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <style>
+                            /* Agar gambar selalu di tengah */
+                            .swiper-slide {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 80vh; /* Tinggi modal agar tidak full layar */
+                            }
+                            /* Pastikan gambar menyesuaikan ukuran modal */
+                            .swiper-slide img {
+                                max-width: 100%;
+                                max-height: 80vh;
+                            /*  object-contain; Menjaga aspek rasio */
+                            }
+                        </style>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                new Swiper('.mySwiper', {
+                                    navigation: {
+                                        nextEl: '.swiper-button-next',
+                                        prevEl: '.swiper-button-prev'
+                                    }
+                                });
+                            });
+                        </script>
                     </div>
-                    <div class="col-span-10">
-                        <p>
-                            I will be presenting our poster on 
-                            <a href="#" class="text-orange-400 hover:underline">“Measuring Local Accuracies to Assess Evaluation Metrics”</a> 
-                            at the <a href="#" class="text-orange-400 hover:underline">2024 Netflix Workshop on Personalization, Recommendation and Search (PRS)!</a> 🎤
-                        </p>
+
+                    <!-- News Item 2 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Nov 6, <br> 2024</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>Started my role as a Co-Assistant for the ERP (Enterprise Resource Planning) course at the <a href="teaching.html" class="text-orange-400 hover:underline">Faculty of Industrial Engineering</a>🏫</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/erp indus.jpg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/erp indus.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/erp indus 2.jpg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-            
-                    <!-- Item 2 -->
-                    <div class="col-span-2 text-white-400 text-sm">
-                        <p>May 20, <br> 2024</p>
+
+                    <!-- News Item 3 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Sep 18, <br> 2024</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>Began teaching as a Laboratory Assistant for the <a href="teaching.html" class="text-orange-400 hover:underline">Web Programming</a> course</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/pbw.jpg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/pbw.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/pbw 2.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/pbw 3.jpg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-span-10">
-                        <p>Started my Machine Learning Research internship at the Algorithmic Identity team at Netflix! 📜</p>
+
+                    <!-- News Item 4 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Aug 24, <br> 2024</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>Joined <a href="experiences.html" class="text-orange-400 hover:underline">PT Anagata Sisedu Nusantara</a> as a Scratch Programming Mentor👩‍💻</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/asn.jpg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/asn.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/asn 2.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/asn 3.jpg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-            
-                    <!-- Item 3 -->
-                    <div class="col-span-2 text-white-400 text-sm">
-                        <p>Aug 25, <br> 2023</p>
+
+                    <!-- News Item 5 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Mar 5, <br> 2024</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>Started teaching as a Laboratory Assistant for the <a href="teaching.html" class="text-orange-400 hover:underline">ERP (Enterprise Resource Planning) </a>and <a href="teaching.html" class="text-orange-400 hover:underline">Data Warehouse</a> course👩‍🏫</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/erp dwh.jpg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/erp dwh.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/erp dwh 2.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/erp dwh 3.jpg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-span-10">
-                        <p>Started my Ph.D. at the <a href="#" class="text-orange-400 hover:underline">Language Technologies Institute</a> at Carnegie Mellon University’s School of Computer Science! 🧑‍🎓</p>
+
+                    <!-- News Item 6 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Feb 20, <br> 2024</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>Began my internship as an ERP Odoo Implementation Specialist and Web Developer at <a href="experiences.html" class="text-orange-400 hover:underline">OK OCE Indonesia</a>👌</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/ok oce.jpg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/ok oce.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/ok oce 2.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/ok oce 3.jpg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-            
-                    <!-- Item 4 -->
-                    <div class="col-span-2 text-white-400 text-sm">
-                        <p>May 22, <br> 2023</p>
+
+                    <!-- News Item 7 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Sep 19, <br> 2023</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>Started teaching as a Laboratory Assistant for the <a href="teaching.html" class="text-orange-400 hover:underline">Operating Systems</a> course💻</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/so.jpeg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/so.jpeg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/so 2.jpeg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/so 3.jpeg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-span-10">
-                        <p>Re-joined the <a href="#" class="text-orange-400 hover:underline">Information Intelligence (Search Quality)</a> team at Apple for my AI/ML internship 🍏</p>
-                    </div>
-            
-                    <!-- Item 5 -->
-                    <div class="col-span-2 text-white-400 text-sm">
-                        <p>Jan 5, <br> 2023</p>
-                    </div>
-                    <div class="col-span-10">
-                        <p>
-                            Our paper <a href="#" class="text-orange-400 hover:underline">“Men Have Feelings Too: Debiasing Sentiment Analyzers using Sequence Generative Adversarial Networks”</a> 
-                            is accepted to the <a href="#" class="text-orange-400 hover:underline">Artificial Intelligence for Social Good Workshop</a> at AAAI 2023 as an <em>oral presentation</em> 🎉
-                        </p>
+
+                    <!-- News Item 8 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Aug 14, <br> 2023</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>Joined <a href="experiences.html" class="text-orange-400 hover:underline">PT Ctech ERP Indonesia </a>for the Studi Independen program</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/ctech.jpg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/ctech.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/ctech 2.jpg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>        
 
             <div class="mt-12 px-4 md:px-0">
                 <h2 class="text-3xl text-white mb-6">publication</h2>
