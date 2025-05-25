@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldis Tamara</title>
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1c1c1d] text-white-300 font-serif">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-[#1c1c1d] shadow-md z-50 px-4 md:px-0">
+        <div class="max-w-4xl mx-auto flex justify-between items-center p-5 text-white text-lg">
+            <!-- Nama di sebelah kiri -->
+            <a href="index.html" class="">Aldis Tamara</a>
+
+            <!-- Menu untuk Desktop -->
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-orange-400">about</a>
+                <a href="experiences.html" class="hover:text-orange-400">experiences</a>
+                <a href="projects.html" class="hover:text-orange-400">projects</a>
+                <a href="teaching.html" class="hover:text-orange-400">teaching</a>
+                <a href="certificates.html" class="hover:text-orange-400">certificates</a>
+                <a href="https://aldistamara.github.io/Portfolio/assets/pdf/Aldis Tamara Putri Iskandar_CV.pdf" class="hover:text-orange-400">cv</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1c1c1d] p-5 text-white">
+            <a href="index.html" class="block py-2 hover:text-orange-400">about</a>
+            <a href="experiences.html" class="block py-2 hover:text-orange-400">experiences</a>
+            <a href="projects.html" class="block py-2 hover:text-orange-400">projects</a>
+            <a href="teaching.html" class="block py-2 hover:text-orange-400">teaching</a>
+            <a href="certificates.html" class="block py-2 hover:text-orange-400">certificates</a>
+            <a href="https://aldistamara.github.io/Portfolio/assets/pdf/Aldis Tamara Putri Iskandar_CV.pdf" class="block py-2 hover:text-orange-400">cv</a>
+        </div>
+    </nav>
+
+    <!-- Tambahkan margin agar konten tidak tertutup navbar -->
+    <div class="mt-20"></div>
+
+    <!-- JavaScript untuk Toggle Menu -->
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <div class="mt-20"> <!-- Tambahkan margin atas agar konten tidak tertutup navbar -->
+        <div class="max-w-4xl mx-auto p-5 pt-12 text-gray-300">
+            <!-- Bagian About -->
+            <div class="gap-6 items-start px-4 md:px-0">
+                <!-- Gambar di atas untuk mobile, di kanan untuk desktop -->
+                <div class="md:col-span-8 max-w-3xl">
+                    <h1 class="text-4xl text-white">certificates</h1>
+                    <p class="text-white-400">certificates in reverse chronological order.</p>
+                </div>
+                <!-- year -->
+                <h3 class="text-3xl text-white mt-6">2025</h3>
+                <p class="" id="paper">Sertifikat Lulusan dengan Pujian - Cum Laude</p>
+                <p class="italic">Universitas Trisakti</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/Sertifikat Lulusan Pujian.pdf" class="text-orange-400 hover:underline">pdf</a></p>
+
+                <p class="mt-4" id="paper">Sertifikat Penghargaan - Asisten Laboratorium Tahun Akademik 2024/2025 Semester Gasal mata Kuliah "Pemrograman Web"</p>
+                <p class="italic">Jurusan Teknik Informatika</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/Sertifikat Asisten Laboratorium Gasal 2024 2025.png" class="text-orange-400 hover:underline">png</a></p>
+
+                <!-- year -->
+                <h3 class="text-3xl text-white mt-6">2024</h3>
+                <p class="">Sertifikat Penghargaan - Asisten Laboratorium Tahun Akademik 2023/2024 Semester Genap mata Kuliah "Enterprise Resource Planning & Data Warehouse"</p>
+                <p class="italic">Jurusan Teknik Informatika</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/Sertifikat Asisten Laboratorium Genap 2023 2024.png" class="text-orange-400 hover:underline">png</a></p>
+
+                <p class="mt-4">Sertifikat Penghargaan - Asisten Laboratorium Tahun Akademik 2023/2024 Semester Gasal mata Kuliah "Sistem Operasi"</p>
+                <p class="italic">Jurusan Teknik Informatika</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/Sertifikat Asisten Laboratorium Gasal 2023 2024.png" class="text-orange-400 hover:underline">png</a></p>
+
+                <p class="mt-4">Sertifikat Keikutsertaan Magang dan Studi Independen Bersertifikat (MSIB) Batch 5</p>
+                <p class="italic">Pusat Karier Universitas Trisakti</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/Sertifikat Keikutsertaan MSIB 5.pdf" class="text-orange-400 hover:underline">pdf</a></p>
+
+                <!-- year -->
+                <h3 class="text-3xl text-white mt-6">2023</h3>
+                <p class="">Sertifikat Magang dan Studi Independen Bersertifikat</p>
+                <p class="italic">PT Ctech ERP Indonesia</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/3. Aldis Tamara Putri Iskandar - CTECH FINAL Sertifikat-MSIB-5..pptx.pdf" class="text-orange-400 hover:underline">pdf</a></p>
+
+                <p class="mt-4">Certificate of Recognition for The Highest Assignments Score @ Ctech Idol - 2023</p>
+                <p class="italic">PT Ctech ERP Indonesia</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/Aldis Tamara Putri Iskandar - CTECH - CERTIFICATE The Highest Assignment Score.pdf" class="text-orange-400 hover:underline">pdf</a></p>
+                
+                <p class="mt-4">Certificate of Achievement for Completing of Learning the Module</p>
+                <p class="italic">PT Ctech ERP Indonesia</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/Aldis Tamara Putri Iskandar - CTECH - CERTIFICATE 7 MODULS.pdf" class="text-orange-400 hover:underline">pdf</a></p>
+
+                <p class="mt-4">Certificate of Achievement a practice venture created as part of Wadhwani Foundation - NEN's programs on entrepreneurship</p>
+                <p class="italic">Wadhwani Foundation</p>
+                <p><a href="https://aldistamara.github.io/Portfolio/assets/certificates/RV - India_for creating a Real Venture.pdf" class="text-orange-400 hover:underline">pdf</a></p>
+            </div>
+
+            <footer class="mt-10 py-2 border-t border-gray-600 text-center text-white-400">
+                <p class="text-xs mt-4">© Copyright 2025 Aldis Tamara. Inspired by <a href="https://github.com/alshedivat/al-folio" class="text-orange-400 hover:underline">al-folio</a> theme. Last updated: May 25, 2025.</p>
+            </footer>
+        </div>    
+    </div>
+</body>
+</html>

@@ -25,6 +25,7 @@
                 <a href="experiences.html" class="hover:text-orange-400">experiences</a>
                 <a href="projects.html" class="hover:text-orange-400">projects</a>
                 <a href="teaching.html" class="hover:text-orange-400">teaching</a>
+                <a href="certificates.html" class="hover:text-orange-400">certificates</a>
                 <a href="https://aldistamara.github.io/Portfolio/assets/pdf/Aldis Tamara Putri Iskandar_CV.pdf" class="hover:text-orange-400">cv</a>
             </div>
 
@@ -42,6 +43,7 @@
             <a href="experiences.html" class="block py-2 hover:text-orange-400">experiences</a>
             <a href="projects.html" class="block py-2 hover:text-orange-400">projects</a>
             <a href="teaching.html" class="block py-2 hover:text-orange-400">teaching</a>
+            <a href="certificates.html" class="block py-2 hover:text-orange-400">certificates</a>
             <a href="https://aldistamara.github.io/Portfolio/assets/pdf/Aldis Tamara Putri Iskandar_CV.pdf" class="block py-2 hover:text-orange-400">cv</a>
         </div>
     </nav>
@@ -93,7 +95,40 @@
             <div class="mt-12 px-4 md:px-0">
                 <h2 class="text-3xl text-white mb-6">news</h2>
                 <div class="space-y-6">
-                    <!-- News Item 1 -->
+                    <!-- News Item 9 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>May 9, <br> 2025</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>I have officially graduated and received my degree with Cum Laude honors, in recognition of my academic excellence🎓</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/graduate.JPG" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/graduate.JPG" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/Sertifikat Lulusan Pujian.jpg" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Item 8 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
                             <p>Jan 31, <br> 2025</p>
@@ -156,7 +191,7 @@
                         </script>
                     </div>
 
-                    <!-- News Item 2 -->
+                    <!-- News Item 7 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
                             <p>Nov 6, <br> 2024</p>
@@ -189,7 +224,7 @@
                         </div>
                     </div>
 
-                    <!-- News Item 3 -->
+                    <!-- News Item 6 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
                             <p>Sep 18, <br> 2024</p>
@@ -223,7 +258,7 @@
                         </div>
                     </div>
 
-                    <!-- News Item 4 -->
+                    <!-- News Item 5 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
                             <p>Aug 24, <br> 2024</p>
@@ -257,7 +292,7 @@
                         </div>
                     </div>
 
-                    <!-- News Item 5 -->
+                    <!-- News Item 4 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
                             <p>Mar 5, <br> 2024</p>
@@ -291,7 +326,7 @@
                         </div>
                     </div>
 
-                    <!-- News Item 6 -->
+                    <!-- News Item 3 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
                             <p>Feb 20, <br> 2024</p>
@@ -325,7 +360,7 @@
                         </div>
                     </div>
 
-                    <!-- News Item 7 -->
+                    <!-- News Item 2 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
                             <p>Sep 19, <br> 2023</p>
@@ -359,7 +394,7 @@
                         </div>
                     </div>
 
-                    <!-- News Item 8 -->
+                    <!-- News Item 1 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
                             <p>Aug 14, <br> 2023</p>
@@ -437,7 +472,7 @@
             </p>
 
             <footer class="mt-10 py-2 border-t border-gray-600 text-center text-white-400">
-                <p class="text-xs mt-4">© Copyright 2025 Aldis Tamara. Inspired by <a href="https://github.com/alshedivat/al-folio" class="text-orange-400 hover:underline">al-folio</a> theme. Last updated: March 11, 2025.</p> 
+                <p class="text-xs mt-4">© Copyright 2025 Aldis Tamara. Inspired by <a href="https://github.com/alshedivat/al-folio" class="text-orange-400 hover:underline">al-folio</a> theme. Last updated: May 25, 2025.</p>
             </footer>
         </div>    
     </div>
