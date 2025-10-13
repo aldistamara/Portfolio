@@ -72,7 +72,7 @@
                     </p>
                     <p class="mt-2">
                         I have actively contributed as a laboratory assistant, industrial teaching assistant, and speaker in ERP training sessions, where I helped students and professionals 
-                        understand and implement ERP solutions effectively. My research on Transjakarta passenger data forecasting using ARIMA and Power BI  is in the process of being published in a reputable journal,
+                        understand and implement ERP solutions effectively. My research on <a href="https://aldistamara.github.io/Portfolio/assets/pdf/Paper.pdf" class="text-orange-400 hover:underline">Transjakarta passenger data forecasting using ARIMA and Power BI</a> is in the process of being published in a reputable journal,
                         demonstrating my strong analytical and problem-solving skills.
                     </p>
                 </div>
@@ -83,18 +83,52 @@
 
             <div class="mt-2 px-4 md:px-0">
                 <p class="mt-2">
-                    Professionally, I have worked as an ERP Odoo Implementation and Web Developer Intern at OK OCE Indonesia, where I successfully implemented various Odoo modules, 
-                    improved email marketing efficiency, and redesigned the organization’s website. Additionally, as a mentor at PT Anagata Sisedu Nusantara, I taught Scratch-based 
+                    Professionally, I have worked as an ERP Odoo Implementation and Web Developer Intern at <a href="https://okoce.net/" class="text-orange-400 hover:underline">OK OCE Indonesia</a>, where I successfully implemented various Odoo modules, 
+                    improved email marketing efficiency, and redesigned the organization’s website. Additionally, as a mentor at <a href="https://anagataacademy.com/about-2/" class="text-orange-400 hover:underline">PT Anagata Sisedu Nusantara</a>, I taught Scratch-based 
                     coding to young students, ensuring a high success rate in their final projects.
                 </p>
                 <p class="mt-2">
-                    With a strong background in system analysis, programming, and business strategy, I am eager to apply my skills in a dynamic environment where I can contribute
-                    to innovative technology-driven solutions.
+                    With a strong background in system analysis, programming, and business strategy, I am eager to apply my skills in a dynamic environment where I can contribute to 
+                    innovative technology-driven solutions. I am excited to announce that I have started my journey as an SAP Functional Trainee at <a href="https://www.astra.co.id/" class="text-orange-400 hover:underline">PT Astra International Tbk</a>, where 
+                    I continue to deepen my expertise in ERP systems and business process integration.
                 </p>
             </div>
             <div class="mt-12 px-4 md:px-0">
                 <h2 class="text-3xl text-white mb-6">news</h2>
                 <div class="space-y-6">
+                    <!-- News Item 10 -->
+                    <div class="flex">
+                        <div class="text-white-400 text-sm">
+                            <p>Jul 15, <br> 2025</p>
+                        </div>
+                        <div class="mdw-3/6 w-full mx-4">
+                            <p>I am excited to announce that I have started my journey as an SAP Functional Consultant at <a href="https://www.astra.co.id/" class="text-orange-400 hover:underline">PT Astra International Tbk</a>💻</p>
+                        </div>
+                        <div x-data="{ open: false, imgIndex: 0 }">
+                            <!-- Thumbnail -->
+                            <div class="">
+                                <img src="img/astra 1.jpg" alt="Project Image" class="w-32 h-24 object-cover cursor-pointer"
+                                     @click="open = true; imgIndex = 0">
+                            </div>
+                            <!-- Modal Image Viewer -->
+                            <div x-show="open" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center"
+                                 @click="open = false">
+                                <div class="relative w-[80%] max-w-[600px] h-auto" @click.stop>
+                                    <!-- Swiper Carousel -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="img/astra 1.jpg" class="w-full"></div>
+                                            <div class="swiper-slide"><img src="img/astra 2.JPG" class="w-full"></div>
+                                        </div>
+                                        <!-- Navigation -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- News Item 9 -->
                     <div class="flex">
                         <div class="text-white-400 text-sm">
@@ -102,7 +136,7 @@
                         </div>
                         <div class="mdw-3/6 w-full mx-4">
                             <p>I am proud to share that I have officially graduated from <a href="https://trisakti.ac.id/" class="text-orange-400 hover:underline">Trisakti University</a>
-                                 with a Bachelor's Degree in Information Systems, earning Cum Laude honors in recognition of my academic excellence.🎓</p>
+                                 with a Bachelor's Degree in Information Systems, earning Cum Laude honors in recognition of my academic excellence🎓</p>
                         </div>
                         <div x-data="{ open: false, imgIndex: 0 }">
                             <!-- Thumbnail -->
@@ -446,7 +480,7 @@
                         <p class="text-sm text-gray-400">
                             Aldis Tamara Putri Iskandar*, Teddy Siswanto*, Syandra Sari* 
                         </p>
-                        <p class="italic text-gray-400">Published in the Jurnal Sistem Informasi dan Telematika (Telekomunikasi, Multimedia dan Informatika) at 
+                        <p class="italic text-gray-400"> In the process of being published in the Jurnal Sistem Informasi dan Telematika (Telekomunikasi, Multimedia dan Informatika) at 
                             EXPLORE 2025</p>
                         <div class="flex space-x-4 mt-2">
                             <a href="https://aldistamara.github.io/Portfolio/assets/pdf/Paper.pdf" target="_blank" rel="noopener noreferrer">
