@@ -21,7 +21,7 @@
                 <a href="projects.html" class="hover:text-orange-400">projects</a>
                 <a href="teaching.html" class="hover:text-orange-400">teaching</a>
                 <a href="certificates.html" class="hover:text-orange-400">certificates</a>
-                <a href="https://aldistamara.github.io/Portfolio/assets/pdf/Aldis Tamara Putri Iskandar_CV.pdf" class="hover:text-orange-400">cv</a>
+                <a href="https://aldistamara.github.io/Portfolio/assets/pdf/Aldis Tamara Putri Iskandar_CV - New.pdf" class="block py-2 hover:text-orange-400">cv</a>
             </div>
 
             <!-- Hamburger Button (Mobile) -->
@@ -61,6 +61,87 @@
                     <h1 class="text-4xl text-white">projects</h1>
                     <p class="text-white-400">academic research projects in reverse chronological order.</p>
                 </div>
+                
+                <h3 class="text-3xl text-white mt-6">2025-2026</h3>
+                <p id="paper">
+                    Supported data migration, validation, and post go-live activities,
+                    ensuring system accuracy, stability, and operational readiness across branches
+                </p>
+                <p class="italic">Aldis Tamara Putri Iskandar*</p>
+                <p>
+                    <a href="#" id="openPhoto" class="text-orange-400 hover:underline">photo</a>
+                </p>
+                <div id="photoModal"
+                    style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.8); z-index:9999; justify-content:center; align-items:center;">
+
+                <div style="position:relative; width:80%; max-width:600px;">
+
+                    <span id="closePhoto"
+                        style="position:absolute; top:-40px; right:0; color:white; font-size:40px; cursor:pointer; z-index:10000;">
+                        ×
+                    </span>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide flex justify-center items-center">
+                                <img src="img/balikpapan.JPG" class="mx-auto">
+                            </div>
+                            <div class="swiper-slide flex justify-center items-center">
+                                <img src="img/bandung.jpg" class="mx-auto">
+                            </div>
+                            <div class="swiper-slide flex justify-center items-center">
+                                <img src="img/palembang.jpg" class="mx-auto">
+                            </div>
+                            <div class="swiper-slide flex justify-center items-center">
+                                <img src="img/pondok jagung.jpg" class="mx-auto">
+                            </div>
+                            <div class="swiper-slide flex justify-center items-center">
+                                <img src="img/sunter.jpg" class="mx-auto">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                </div>
+                <style>
+                .swiper-slide {
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    height:80vh;
+                }
+
+                .swiper-slide img {
+                    max-width:100%;
+                    max-height:80vh;
+                }
+                </style>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const modal = document.getElementById('photoModal');
+                    document.getElementById('openPhoto').addEventListener('click', function(e){
+                        e.preventDefault();
+                        modal.style.display = 'flex';
+                    });
+                    document.getElementById('closePhoto').addEventListener('click', function(){
+                        modal.style.display = 'none';
+                    });
+                    modal.addEventListener('click', function(e){
+                        if(e.target === modal){
+                            modal.style.display = 'none';
+                        }
+                    });
+                    new Swiper('.mySwiper', {
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        }
+                    });
+                });
+                </script>
+
                 <!-- year -->
                 <h3 class="text-3xl text-white mt-6">2025</h3>
                 <p class="" id="paper">Analisa dan Peramalan Data Penumpang Transjakarta dengan ARIMA serta Visualisasi dengan 
